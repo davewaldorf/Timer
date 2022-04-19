@@ -85,4 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     setClock('.timer', deadline);
+
+    //alo
 });

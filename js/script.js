@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 days.innerHTML = t.days;
                 hours.innerHTML = t.hours;
                 minutes.innerHTML = t.minutes;
-                days.seconds = t.seconds;
+                seconds.innerHTML = t.seconds;
 
                 if (t.total <= 0) {
                     clearInterval(timeInterval);

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getZero(num) {
         if (num >=0 && num < 10) {
-            return `0${num}`
+            return `0${num}`;
         } else { 
             return num;
         }
@@ -93,4 +93,20 @@ document.addEventListener("DOMContentLoaded", () => {
     
     setClock('.timer', deadline);
 
+    // MODAL
+
+    const modalTrigger = document.querySelector('[data-modal]'),
+          modal = document.querySelector('.modal'),
+          modalCloseBtn = document.querySelector('[data-close]');
+
+          
+    modalTrigger.addEventListener('click', () => {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+    });
 });
